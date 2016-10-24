@@ -2,7 +2,7 @@
 add_action('admin_menu', 'add_page_template' );
 
 function add_page_template() {
- 	add_theme_page('Redirection settings', __('Redirection settings', 'ultraflux'), 'manage_options', 'redirection-theme-settings', 'redirection_theme_page' );
+ 	add_theme_page('Redirection settings', __('Redirection settings', 'redirection'), 'manage_options', 'redirection-theme-settings', 'redirection_theme_page' );
 }
 
 function redirection_theme_page() {
