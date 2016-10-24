@@ -12,6 +12,6 @@ if ( ! empty( $redirect ) ) {
 	/** Hack : striclty redirect to wanted url */
 	wp_redirect( $redirect, 301 );
 	exit;
-} else {
-	wp_die( 'Configure theme redirection on BO please' );
-}
+} 
+
+wp_die( 'Configure theme redirection on BO please' );
