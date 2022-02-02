@@ -10,7 +10,7 @@
 $redirect = get_option( 'redirection_url' );
 if ( ! empty( $redirect ) ) {
 	/** Hack : striclty redirect to wanted url */
-	wp_redirect( $redirect, 301 );
+	wp_redirect( $redirect, 301, 'bea-redirection' );
 	exit;
 } 
 
