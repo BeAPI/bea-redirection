@@ -16,7 +16,7 @@ function redirection_theme_page() {
 		}
 
 		$_POST['redirection_url'] = stripslashes($_POST['redirection_url']);
-		update_option('redirection_url', $_POST['redirection_url'] );
+		update_option('redirection_url', sanitize_text_field( $_POST['redirection_url'] ) );
 
 		$text =  '<div id="setting-error-settings_updated" class="updated settings-error notice is-dismissible"><p><strong>Settings saved.</strong></p></div>';
 	}
